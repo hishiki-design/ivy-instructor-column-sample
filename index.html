@@ -617,9 +617,7 @@ var CLOCK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-w
 var BOOK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H17v14H5.5A1.5 1.5 0 0 0 4 19.5V5.5Z"/><path d="M17 8h2.5A1.5 1.5 0 0 1 21 9.5V20"/><path d="M7.5 8.5h6M7.5 12h6"/></svg>';
 
 function articleHtml(c, bodyText){
-  var back = (PREVIEW && c.id === PREVIEW.id)
-    ? '<a class="back" href="#/">← コラム一覧を見る</a>'
-    : '<a class="back" href="#/" onclick="if(history.length>1){history.back();return false;}">← 前の画面にもどる</a>';
+  var back = '<a class="back" href="#/">← コラム一覧を見る</a>';
 
   var inner;
   if(bodyText === null){
