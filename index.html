@@ -619,7 +619,7 @@ var BOOK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-wi
 function articleHtml(c, bodyText){
   var back = (PREVIEW && c.id === PREVIEW.id)
     ? '<a class="back" href="#/">← コラム一覧を見る</a>'
-    : '<button class="back" onclick="history.back()">← 前の画面にもどる</button>';
+    : '<a class="back" href="#/" onclick="if(history.length>1){history.back();return false;}">← 前の画面にもどる</a>';
 
   var inner;
   if(bodyText === null){
