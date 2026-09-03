@@ -236,14 +236,14 @@ h1 .w,h2 .w,h3 .w{display:inline-block}
 /* 見本であることを示す帯。サイトの下書きプレビュー帯（.pv）と同じ作法で置いています */
 .pv.sample{flex-direction:column;align-items:center;gap:5px;text-align:center}
 .pv.sample .row{display:flex;flex-direction:column;align-items:center;gap:0}
-.pv.sample .row b{margin-bottom:2.2em}
+.pv.sample .row b{margin-bottom:.35em;font-family:var(--sans);letter-spacing:.08em}
 .pv.sample .row span{font-weight:700}
 .pv.sample .sub{font-size:12.5px;font-weight:600;color:var(--ink-3);line-height:1.75;max-width:62ch}
 </style>
 
 
 <div class="pv sample">
-  <div class="row"><b>Sample</b><span>このサイトはサンプルです。<br>実際の記事は、皆さんが提出フォームに書いた内容から作られます。</span></div>
+  <div class="row"><b>サンプル</b><span>このサイトはサンプルです。<br>実際の記事は、皆さんが提出フォームに書いた内容から作られます。</span></div>
   <div class="sub">記事の最後に出る名前と顔写真は、フォームの「インストラクター名・顔写真の公開可否について」の回答にしたがって切り替わります。この見本ではイニシャルで表示しています。</div>
 </div>
 <div id="pvBar"></div>
